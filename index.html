@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport"  content="width=device-width, initial-scale=1" />
+        <!--<link rel="stylesheet" type="text/css" href="static/css/layout.css" media="all" />-->
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="static/css/main.css" media="all" />
+        
+        <meta http-equiv="content-langague" content="pt-br" /> 
+        <meta name="description" content="MEU PAINEL DE CONTROLE." /> 
+        <meta name="keywords" content="php, primeiro, firts">
+        <meta name="author" content="Rodrigo Attique" /> 
+        <meta name="copyright" content="2016 rodrigoatique.com.br" /> 
+
+        <title>Teste PHP</title>
+        <link rel="shortcut icon" href="" />
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#home">Meu Painel</a>
+                    <button class="navbar-toggle" type="button"
+                        data-target=".navbar-collapse" data-toggle="collapse">
+                      Menu
+                    </button>
+                </div><!-- /navbar-header -->
+                <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#tickets">Tickets</a></li>
+                </ul>
+            </div><!-- /container-fluid -->
+        </nav><!-- /nav-->
+        
+        <div id="home" class="jumbotron">
+            <h1>Este é o meu painel versão bootstrap</h1>
+            <div class="row">
+                
+            </div><!-- /row-->
+        </div><!-- /container -->
+        <div class="clearfix"></div>
+        
+        <div class="container" id="tickets">
+            <h1 class="text-center heading">Tickets</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>Ticket1</li>
+                    </ul>
+                </div><!-- /col-md-12-->
+            </div><!-- /row-->
+        </div><!-- /tickets-->
+        
+        <div class="pagina">
+            <h1 class="ttl-pagina">MEU PAINEL</h1>
+            <div class="menu">
+                <!-- Desenvolvimento do menu -->
+                <ul>
+                    <li><a href="index?pagina=home">Home</a></li>
+                    <li><a href="index?pagina=tickets">Tickets</a></li>
+                    <li><a href="index.php?pagina=contato">Contate nos</a></li>
+                    <li><a href="index.php?pagina=categorias">Categorias</a></li>
+                </ul>
+            </div> <!-- Fim menu -->
+            
+            <div class="conteudo">
+                <!-- DESENVOLVIMENTO CONTUDOD-->
+                
+                <?php include('paginas.php'); ?>
+                
+            </div><!-- Fim conteudo -->
+            <div class="rodape">
+                <hr>
+                <address>attiquetecnologia@gmail.com</address>
+				<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
+<!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+<input type="hidden" name="currency" value="BRL" />
+<input type="hidden" name="receiverEmail" value="rodrigoatique@gmail.com" />
+<input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/doacoes/120x53-doar-azul.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+</form>
+<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+            </div><!-- fim rodape -->
+        </div><!-- fim pagina -->
+    </body>
+</html>
