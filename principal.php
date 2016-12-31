@@ -2,7 +2,6 @@
     /**
      * Este arquivo vai fazer um switch e redirecionar para as páginas selecionadas no menu
      */
-
     switch ($_GET['pagina']){
         /* INCLUDE USUARIOS */
         case "usuarios" :
@@ -58,5 +57,3 @@
             break;
         default : include 'home.php';
     }
-    
-?>

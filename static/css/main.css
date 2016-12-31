@@ -3,3 +3,4 @@
 body { padding: 0; }
 .form-control:invalid { border: 1px solid #cc0000; }
 .navbar { margin: 0;}
+ul li {list-style: none;}

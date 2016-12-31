@@ -13,7 +13,8 @@
     <tbody>
 
 <?php
-require_once 'lib/entidade/Categoria.class.php';
+echo $_SERVER['DOCUMENT_ROOT'];
+require_once $_SERVER['DOCUMENT_ROOT'].'casabellabarretos/lib/entidade/categoria.php';
 
 $categoria = new Categoria();
 foreach ($categoria->all() as $key) {

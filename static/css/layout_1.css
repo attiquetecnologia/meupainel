@@ -1,18 +1,9 @@
-* {
-    padding: 0; margin: 0;
-    font-family: Arial, Helvetica ,sans-serif;
-}
 body {
     background: #e6e4e4;
 }
 .pagina {
-    width: 920px;
+    width: 800px;
     background: #ffffff;
-}
-
-.ttl-pagina {
-    text-align: center;
-    font-size: 28px;
 }
 
 .menu {
@@ -22,7 +13,7 @@ body {
     font-family: serif;
     font-size: 22px;
     font-weight: bold;
-    text-align: center;
+    color: #000000;
 }
 
 .menu ul {
@@ -40,67 +31,30 @@ body {
 }
 
 .menu a {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
 }
 
 .menu a:hover {
-    color: #FFFFFF;
-}
-
-.entre-contato {
-    width: 10%;
-    background-color: #660066;
-    float: right;
-    position: static;
-}
-.entre-contato form {
-    position: fixed;
+    color: #000000;
 }
 
 .ttl-conteudo {
-    width: 100%;
     background: #cccccc;
     color: #fff;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    float: left;
-}
-
-.conteudo ul {
-    padding: 10px;
-}
-.conteudo li {
-    padding: 3px;
 }
 
 .conteudo {
     margin: 10px;
-    float: left;
-    width: 80%;
 }
 .conteudo table {
     width: 100%;
 }
-
-
-.conteudo form {
-    font-size: 22px;
-    width: 400px;
-    border:solid;
-    
-}
-.conteudo form label{
-    
-}
-.conteudo form input{
-    
-}
 .rodape {
     height: 90px;
-    width: 100%;
-    float: left;
 }
 
 .w3-table-all{border:1px solid #ccc}
@@ -108,11 +62,10 @@ body {
 .w3-table-all tr:nth-child(even){background-color:#f1f1f1}
 .w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}
 .w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
-.w3-table img {width: 200px; height: 100px;}
+
 .w3-hoverable tbody tr{transition:background-color .25s ease}
 .w3-hoverable tbody tr:hover{background-color:#ccc}
 .w3-centered tr th,.w3-centered tr td{text-align:center}
 .w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:6px 8px;display:table-cell;text-align:left;vertical-align:top}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 .w3-btn{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none !important;color:#fff;background-color:#000;text-align:center;transition:.2s ease-out;cursor:pointer;white-space:nowrap}
-
